@@ -4,30 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Basics</title>
+
+    <style>
+        a{
+            background-color: darkslategray;
+        }
+        #headerId{
+            background-color: #192655;
+        }
+    </style>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Junior Dev</h1>
+    <header id="headerId" class="headerClass">
+        <h1 class="headerTitle">Junior Dev</h1>
     </header>
 
-    <main>
-        <nav>
-            <p><a href="">HTML</a></p>
-            <p><a href="">CSS</a></p>
-            <p><a href="">Javascript</a></p>
+    <main class="mainBlock">
+        <nav class="navbarSide">
+            <p class="htmlParagraph"><a class="anchorTag" style="color: red;" href="https://www.w3schools.com/html/">
+                💀 HTML</a>
+            </p>
+            <p><a class="anchorTag" style="color: rgb(177, 115, 0);" href="https://www.w3schools.com/w3css/defaulT.asp">🎨 CSS</a></p>
+            <p><a class="anchorTag" style="color: rgb(138, 138, 0);" href="https://www.w3schools.com/js/">🤖 Javascript</a></p>
+            <p><a class="anchorTag" style="color: blue;" href="https://sass-lang.com/guide/">🎨 Sass</a></p>
+            <p><a class="anchorTag" style="color: yellow;" href="https://www.w3schools.com/bootstrap/">🎨 Bootstrap</a></p>
+            <p><a class="anchorTag" style="color: green;" href="https://www.w3schools.com/nodejs/">🎨 Node.js</a></p>
+            <p><a class="anchorTag" style="color: violet;" href="https://react.dev/learn">⚛️ React</a></p>
+            <p class="jQueryParagraph"><a class="anchorTag" style="color: purple;" href="https://www.w3schools.com/jquery/">
+                🎨 jQuery</a>
+            </p>
         </nav>
 
-        <section>
-            <h2>Deveveloper's Documentation</h2>
-            <p>Junior Dev is a documentation webpage that helps learners in understanding HTML, CSS, and Javascript by redirecting 
-                them to the appropriate websites.
+        <section class="mainContent">
+            <h2 class="mainSubtitle">Deveveloper's <span class="mainSubtitleSpan">Documentation</span></h2>
+            <p class="mainParagraph">Junior Dev is an online platform designed to facilitate the comprehension of various technologies, 
+                programming languages, and documentation by providing users with recommended links to relevant websites.
             </p>
         </section>
     </main>
 
     <footer>
-        
+        Copyrights Reserved 2023
     </footer>
 </body>
 </html>
